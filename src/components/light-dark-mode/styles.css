@@ -1,0 +1,50 @@
+:root{
+    --background: white;
+    --text-primary: black;
+    --button-bg: black;
+    --button-text: white;
+}
+
+[data-theme='dark']{
+    --background: black;
+    --text-primary: white;
+    --button-bg: white;
+    --button-text: black;
+}
+
+.light-dark-mode{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    transition: all 0.5s;
+    background-color: var(--background);
+    color: var(--text-primary);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.light-dark-mode button{
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--button-bg);
+    cursor: pointer;
+    margin: 15px 0px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.light-dark-mode p{
+    color: var(--text-primary);
+    font-size: 50px;
+    margin: 0px;
+}
